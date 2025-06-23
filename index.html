@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Marry Me, Fuggan? 💍</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Merriweather', serif;
+      background: radial-gradient(ellipse at bottom, #0d0d0d, #000);
+      color: #fff;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .page {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+    .page.active { display: block; overflow-y: auto; height: 100vh; }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #ff99cc;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #ff69b4;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #ff85c1; }
+    #giftBox {
+      width: 100px;
+      height: 100px;
+      margin: 30px auto;
+      background: #ff69b4;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: transform 0.4s;
+    }
+    #giftBox:hover { transform: scale(1.1); }
+    .letter {
+      max-width: 800px;
+      margin: 30px auto;
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 0, 150, 0.2);
+      text-align: left;
+    }
+    .letter p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      text-align: right;
+      color: #ff69b4;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff69b4; }
+      to { text-shadow: 0 0 20px #ff1493; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="confetti"></canvas>  <div class="page active" id="page1">
+    <h1>Will You Marry Me, Fuggan? 💍</h1>
+    <button onclick="nextPage()">Yes</button>
+    <button onclick="nextPage()">Definitely Yes</button>
+  </div>  <div class="page" id="page2">
+    <h1>Click the Gift Box 🎁</h1>
+    <div id="giftBox" onclick="nextPage()">🎁</div>
+  </div>  <div class="page" id="page3">
+    <h1>Click "I Love You" to reveal your gift 💖</h1>
+    <button onclick="showLetter()">I Love You</button>
+  </div>  <div class="page" id="letterPage">
+    <div class="letter">
+      <h1>To My Dearest Arushi 💖</h1>
+      <p>From the first moment I heard your voice, something shifted deep within me. There was a calmness, a sense of home I had never known before. I remember thinking, "How can someone sound like sunrise?" And ever since, you’ve been the light that breaks through even my darkest days.</p>
+      <p>Do you remember that day? April 15th, 3:30 PM. The moment we met online, something clicked — a connection I didn’t see coming but instantly felt. And then, just two days later, at 5:00 AM on April 17th, I asked you the question my heart had already answered — I proposed to you. It might’ve seemed fast to the world, but not to my soul. Because some connections aren’t measured in days, but in depth.</p>
+      <p>You came into my life like poetry I didn’t know how to read at first — quiet, rhythmic, full of layered meaning and feeling. But as I listened, as I watched and learned and opened up, I began to understand the language of your heart. You love softly, fiercely, completely. And being loved by you? It’s like being chosen by the stars.</p>
+      <p>There’s something magical in the ordinary with you — the way your laughter feels like wind chimes, the way your eyes look when you’re teasing me, the comfort of your silences, the way we talk about nonsense and end up uncovering truths. You make even the simplest things feel extraordinary.</p>
+      <p>Sometimes I think of how the world tries to rush love. But what we have is the opposite. We’ve built it slowly, like a home brick by brick — through every smile, every late-night talk, every apology, every I-miss-you moment. It’s not built of grand gestures. It’s built of real moments. Gentle. Honest. Steady.</p>
+      <p>I don’t think I’ve told you this enough: You’ve changed me. Not by force, but just by being yourself. You’ve made me softer, calmer, and more thoughtful. I pause now, before reacting. I feel more. I forgive more. I’ve grown into someone who wants to be better — not just for me, but for us.</p>
+      <p>You have this beautiful way of grounding me. Of reminding me what matters. And when I lose myself in worries or insecurities, you pull me back — with your voice, with your presence, with just a “You’re okay. We’re okay.”</p>
+      <p>There’s no such thing as perfection in love, and I don’t expect it. What I do know is this: when I think of a future, it’s always with you in it. Whether we’re building dreams or just lying next to each other doing nothing, that’s the life I want. A life where we’re each other’s safe place.</p>
+      <p>Arushi, I admire you so deeply. For your strength. For how you carry your softness like a quiet rebellion in a world that often asks us to be hard. For how you love. For how you care for others even when no one is watching. You are rare. You are art. You are a warm fireplace in the middle of winter.</p>
+      <p>I love the way you dream big but stay grounded. I love how you find joy in little things — a good song, a soft pillow, or the way the sky looks after it rains. I love how you believe in people, even when they’re messy and broken. And most of all, I love how you love me — without needing me to be anything but myself.</p>
+      <p>So today, I want to give you this letter — a piece of my heart in words. Words that still feel small compared to how I feel. But it’s a start. A reminder. That you are deeply loved, not just for what you do or say, but for who you are.</p>
+      <p>If I could hold a mirror to your soul, I’d show you what I see — someone so full of light, it spills into the lives around her. You’ve filled the cracks in my heart with kindness. You’ve taught me what real love is. You’ve made me believe in forever.</p>
+      <p>I want to laugh with you until we grow old. I want to argue about silly things and then make up over snacks. I want to support your dreams, even the wild ones. I want to comfort you when life feels too heavy. I want to be your favorite person. I want to be your home.</p>
+      <p>I know we’ll have hard days. I know life won’t always be kind. But I promise, my love won’t waver. Even in the storms, I’ll choose you. Every time. With every beat of my heart. In all timelines. In all lifetimes.</p>
+      <p>You’re the softest place I’ve ever landed. And I never want to take that for granted.</p>
+      <p>I love you. More than yesterday. Less than tomorrow.</p>
+      <p>Forever yours,</p>
+      <p class="signature">From your Kunal 💌</p>
+    </div>
+  </div>  <script>
+    let currentPage = 1;
+    function nextPage() {
+      document.getElementById(`page${currentPage}`).classList.remove("active");
+      currentPage++;
+      document.getElementById(`page${currentPage}`).classList.add("active");
+    }
+
+    function showLetter() {
+      document.getElementById("page3").classList.remove("active");
+      document.getElementById("letterPage").classList.add("active");
+      launchConfetti();
+    }
+
+    function launchConfetti() {
+      const canvas = document.getElementById('confetti');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const confettiCount = 150;
+      const confetti = [];
+
+      for (let i = 0; i < confettiCount; i++) {
+        confetti.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height - canvas.height,
+          r: Math.random() * 6 + 2,
+          d: Math.random() * confettiCount,
+          color: `hsl(${Math.random() * 360}, 100%, 70%)`,
+          tilt: Math.floor(Math.random() * 10) - 10,
+          tiltAngle: 0,
+          tiltAngleIncremental: (Math.random() * 0.07) + 0.05
+        });
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        confetti.forEach(c => {
+          ctx.beginPath();
+          ctx.lineWidth = c.r;
+          ctx.strokeStyle = c.color;
+          ctx.moveTo(c.x + c.tilt + c.r / 2, c.y);
+          ctx.lineTo(c.x + c.tilt, c.y + c.tilt + c.r / 2);
+          ctx.stroke();
+        });
+        update();
+      }
+
+      function update() {
+        confetti.forEach(c => {
+          c.tiltAngle += c.tiltAngleIncremental;
+          c.y += (Math.cos(c.d) + 3 + c.r / 2) / 2;
+          c.tilt = Math.sin(c.tiltAngle - (c.d / 3)) * 15;
+          if (c.y > canvas.height) {
+            c.y = -10;
+            c.x = Math.random() * canvas.width;
+          }
+        });
+      }
+
+      function animateConfetti() {
+        draw();
+        requestAnimationFrame(animateConfetti);
+      }
+      animateConfetti();
+    }
+  </script></body>
+</html>
